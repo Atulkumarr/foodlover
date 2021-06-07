@@ -1,0 +1,373 @@
+@media (max-width:1600px) {
+    //  food quality media query
+    .food-quality {
+        .food-quality-text {
+            img {
+                top: 92%;
+            }
+        }
+    }
+    .food-quality-img {
+        img {
+            &:nth-child(1) {
+                top: 214px;
+            }
+            &:nth-child(2) {
+                top: 225%;
+            }
+        }
+    }
+}
+
+@media (max-width:1400px) {
+    .food-quality {
+        .food-quality-text {
+            width: 65%;
+            img {
+                width: 81%;
+                left: -21%;
+                top: 287px;
+            }
+        }
+    }
+    .food-quality-img {
+        img {
+            &:nth-child(1) {
+                top: 109%;
+            }
+            &:nth-child(2) {
+                top: 149%;
+            }
+        }
+    }
+}
+
+@media(max-width:1118px) {
+    // meal
+    .meal {
+        .meal-img {
+            img {
+                top: -200%
+            }
+        }
+    }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+@media (max-width:940px) {
+    html {
+        font-size: 17px;
+    }
+    // header
+    header {
+        // navigation
+        nav {
+            ul {
+                width: 40%;
+            }
+        }
+        // banner
+        .banner {
+            .banner-img {
+                img {
+                    width: 90%;
+                }
+            }
+            .banner-text {
+                width: 54%;
+                h1 {
+                    font-size: 2.7rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    // food-quality
+    .food-quality {
+        .food-quality-text {
+            top: 16%;
+            width: 55%;
+            img {
+                top: 52%;
+                width: 100%;
+            }
+        }
+    }
+    //meal
+    .meal {
+        .meal-img {
+            img {
+                top: -155%
+            }
+        }
+    }
+    //footer
+    footer {
+        ul {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width:756px) {
+    .meal {
+        .meal-img {
+            img {
+                width: 139%;
+                position: absolute;
+                left: 53%;
+                top: -125%;
+            }
+        }
+        .meal-text {
+            width: 80%;
+            position: absolute;
+            left: 9%;
+            .heading {
+                color: black;
+                text-shadow: 2px 2px 2px white;
+                text-align: center;
+            }
+            p {
+                color: black;
+                text-shadow: 2px 2px 2px white;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    // header
+    header {
+        // navigation
+        nav {
+            position: fixed;
+            width: 320px;
+            right: -320px;
+            flex-direction: column;
+            margin-top: 0px;
+            background: #1d1d23;
+            padding: 60px 0px;
+            z-index: 999;
+            height: 100vh;
+            .slider {
+                display: block;
+                li {
+                    text-align: center;
+                    margin-bottom: 4%;
+                    a {
+                        &::before {
+                            height: 1px;
+                        }
+                        &::after {
+                            height: 1px;
+                        }
+                    }
+                }
+            }
+            .logo {
+                width: unset;
+                img {
+                    width: 85px;
+                }
+            }
+        }
+        .active {
+            right: 0px;
+        }
+        .remove-nav {
+            right: -320px;
+        }
+        .rotate-line-1 {
+            transform: rotate( 45deg) translate(7px, 8px);
+        }
+        .rotate-line-2 {
+            transform: rotate( -46deg);
+        }
+        .remove-line-3 {
+            opacity: 0;
+        }
+        .hamburger {
+            display: block;
+            margin-left: 10px;
+            margin-top: 10px;
+            z-index: 1000;
+            position: fixed;
+            .line {
+                margin: 8px 0px;
+                background-color: #e58f00;
+            }
+        }
+        // banner
+        .banner {
+            .banner-img {
+                display: none;
+            }
+            .banner-text {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    // about
+    .about {
+        .about-img {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .about-text {
+            width: 80%;
+            margin: 20px auto;
+            .heading {
+                text-align: center;
+            }
+        }
+    }
+    // food-quality
+    .food-quality {
+        .food-quality-text {
+            img {
+                display: none;
+            }
+        }
+    }
+    // gallery section
+    .gallery {
+        .gallery-img {
+            width: 80%;
+            margin: 20px auto;
+        }
+    }
+    // menu
+    .menu {
+        .menu-box {
+            width: 80%;
+            margin: 20px auto;
+        }
+    }
+}
+
+@media (max-width:550px) {
+    html {
+        font-size: 14px;
+    }
+    // header
+    header {
+        // banner
+        .banner {
+            .banner-text {
+                width: 100%;
+                text-align: center;
+                button {
+                    width: 140px;
+                    height: 54px;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    // about
+    .about {
+        padding: 80px 5px;
+        .about-img {
+            width: 100%;
+        }
+        .about-text {
+            width: 100%;
+        }
+    }
+    //food quality
+    .food-quality {
+        padding: 50px 0px;
+        overflow: hidden;
+        svg {
+            display: none;
+        }
+        .food-quality-text {
+            position: unset;
+            width: 100%;
+            height: auto;
+            img {
+                position: unset;
+            }
+        }
+    }
+    .food-quality-img {
+        position: unset;
+        height: auto;
+        img {
+            &:nth-child(1) {
+                position: absolute;
+                left: 73%;
+                top: 0px;
+                z-index: -2;
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+    // your food
+    .your-food {
+        .your-food-text {
+            border: 2px solid #e58f00;
+            padding: 76px 14px;
+        }
+    }
+    //menu 
+    .menu {
+        padding: 50px 0px;
+        .heading {
+            margin-bottom: 0px;
+        }
+    }
+    .meal {
+        padding: 50px 0px;
+        .meal-img {
+            img {
+                width: 181%;
+                position: absolute;
+                left: 31%;
+                top: -125%;
+            }
+        }
+    }
+    footer {
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width:400px) {
+    .meal {
+        margin-top: 50px;
+        .meal-img {
+            img {
+                width: 174%;
+                left: 36%;
+                top: -74%;
+            }
+        }
+    }
+    footer {
+        ul {
+            width: 100%;
+            li {
+                a {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
