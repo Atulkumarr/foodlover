@@ -20,16 +20,16 @@
 
             <ul class="flex slider">
                 <li>
-                    <a href="#home">HOME</a>
+                    <a href="#home" class="nav">HOME</a>
                 </li>
                 <li>
-                    <a href="#about">ABOUT</a>
+                    <a href="#about" class="nav">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#menu">MENUS</a>
+                    <a href="#menu" class="nav">MENUS</a>
                 </li>
                 <li>
-                    <a href="#food-quality">OFFERS</a>
+                    <a href="#food-quality" class="nav">OFFERS</a>
                 </li>
             </ul>
             <div class="logo">
@@ -37,13 +37,13 @@
             </div>
             <ul class="flex slider">
                 <li>
-                    <a href="#gallery">GALLERY</a>
+                    <a href="#gallery" class="nav">GALLERY</a>
                 </li>
                 <li>
-                    <a href="#footer">CONTACT</a>
+                    <a href="#footer" class="nav">CONTACT</a>
                 </li>
                 <li>
-                    <a href="#meal">MEAL</a>
+                    <a href="#meal" class="nav">MEAL</a>
                 </li>
             </ul>
 
@@ -209,7 +209,7 @@
             $(".line-2").toggleClass("rotate-line-2");
             $(".line-3").toggleClass("remove-line-3");
         });
-        $('a').click(function() {
+        $('.nav').click(function() {
             $('nav').removeClass('active')
             $('ul').removeClass('active')
             $(".line-1").toggleClass("rotate-line-1");
